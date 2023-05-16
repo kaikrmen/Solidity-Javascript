@@ -8,10 +8,23 @@ contract TasksContract {
         initialize();
     }
 
+    event TaskCreated(
+        uint id,
+        string title,
+        string description,
+        bool done,
+        uint256 createdAt
+    );
+
+    event TaskToggledDone(
+        uint id,
+        bool done
+    );
+
     struct Task {
         uint256 id;
-        string description;
         string title;
+        string description;
         bool done;
         uint256 createdAt;
     }
@@ -19,14 +32,16 @@ contract TasksContract {
     mapping(uint256 => Task) public tasks;
 
     function createTask(string memory _title, string memory _description) public {
-        tasks[taskCounter] = Task(taskCounter, _description, _title, false, block.timestamp);
         taskCounter++;
+        tasks[taskCounter] = Task(taskCounter, _title, _description, false, block.timestamp);
+        emit TaskCreated(taskCounter, _title, _description,  false, block.timestamp);
     }
 
     function toggleDone(uint _id) public {
         Task memory _task = tasks[_id];
         _task.done = !_task.done;
         tasks[_id] = _task;
+        emit TaskToggledDone(_id, _task.done);
     }
 
     function initialize() public {
