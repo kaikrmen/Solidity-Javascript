@@ -1,10 +1,15 @@
-const taskForm = document.querySelector("#taskForm")
-
-taskForm.addEventListener("submit", e => { 
-    e.preventDefault()
-
-    console.log(
-        taskForm["title"].value,
-        taskForm["description"].value
-    )
-})
+document.addEventListener("DOMContentLoaded", () => {
+    App.init();
+  });
+  
+  /**
+   * Task form
+   */
+  const taskForm = document.querySelector("#taskForm");
+  
+  taskForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const title = taskForm["title"].value;
+    const description = taskForm["description"].value;
+    App.createTask(title, description);
+  });
