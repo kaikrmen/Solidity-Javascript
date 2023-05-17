@@ -7680,71 +7680,14 @@
   },
   "networks": {
     "5777": {
-      "events": {
-        "0x6549102bed7d1bb5ec529ee14e2ca60ffc1f47f66d4cc6ca713220613cc64c25": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": false,
-              "internalType": "uint256",
-              "name": "id",
-              "type": "uint256"
-            },
-            {
-              "indexed": false,
-              "internalType": "string",
-              "name": "title",
-              "type": "string"
-            },
-            {
-              "indexed": false,
-              "internalType": "string",
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "indexed": false,
-              "internalType": "bool",
-              "name": "done",
-              "type": "bool"
-            },
-            {
-              "indexed": false,
-              "internalType": "uint256",
-              "name": "createdAt",
-              "type": "uint256"
-            }
-          ],
-          "name": "TaskCreated",
-          "type": "event"
-        },
-        "0x3a359256e016dcfa8426ec503e08484999d6fcfb8c0f6084dc9e63374d838429": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": false,
-              "internalType": "uint256",
-              "name": "id",
-              "type": "uint256"
-            },
-            {
-              "indexed": false,
-              "internalType": "bool",
-              "name": "done",
-              "type": "bool"
-            }
-          ],
-          "name": "TaskToggledDone",
-          "type": "event"
-        }
-      },
+      "events": {},
       "links": {},
-      "address": "0xe5683cb15f4F592A98f8f47120EA0F583C2EB2E2",
-      "transactionHash": "0x2a3d2c029017bb293b04be8eddee8bf9542c5a0fb2d011f5399386e61ba51aca"
+      "address": "0x4E0D794ba9316660C09918cCE9E0f47138EbE832",
+      "transactionHash": "0x2c78d62230707d80f9497ea3a77c163e81ab5894cc57dd59bdbaee4070c94939"
     }
   },
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-05-17T15:58:17.616Z",
+  "updatedAt": "2023-05-17T18:01:41.926Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
