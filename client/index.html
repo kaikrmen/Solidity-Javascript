@@ -11,9 +11,20 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="card bg-dark">
+                <div class="card card-body rounded-0 mb-4 bg-dark">
                     <h1>DApp</h1>
+                    <h6 class="text-muted">Decentralized Task App</h6>
+                    <span>Wallet</span>
+                    <span>1561165 </span>
                 </div>
+
+                <form class="card card-body bg-dark rounded-0" id="taskForm">
+                    <h4>Save a Task</h4>
+                    <input type="text" name="title" placeholder="Write a Task" class="form-control bg-dark text-white rounded-0 border-0 my-4">
+                    <textarea  name="description" class="form-control bg-dark text-white rounded-0 border-0 my-4" placeholder="I have to do..." cols="30" rows="2"></textarea>
+
+                    <button class="btn btn-primary">Save</button>
+                </form>
             </div>
             <div class="col-md-8">
                 <div class="card bg-dark">
@@ -22,5 +33,10 @@
             </div>
         </div>
     </div>
+
+    <script src="./libs/@truffle/contract/browser-dist/truffle-contract.min.js"></script>
+    <script src="app.js"></script>
+    <script src="ui.js"></script>
+
 </body>
 </html>

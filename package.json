@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/kaikrmen/Solidity-Javascript#readme",
   "dependencies": {
+    "@truffle/contract": "^4.6.21",
     "bootstrap": "^5.2.3",
     "lite-server": "^2.6.1"
   }
